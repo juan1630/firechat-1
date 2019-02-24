@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ChatService } from './providers/chat.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'firechat';
+  constructor( public _cs:ChatService ) {
+      
+  }
 }
